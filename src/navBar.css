@@ -67,27 +67,39 @@ header{
    color: white ;
 }
 .main-carrousel{
-   padding-left: 20px;
+   /* padding-left: 20px; comentaremos este paddig porque nos que se  queda aun cuando usamos el scroll de las imagenes */
+   position: relative;
+   overflow-x: visible;
 }
 .main-carrousel-container{
-   display: inline-flex;
+   position: relative;
+   display: flex;  /* el display flex  usa mos en este caso en ligar del display inline flex becaus  con esy añadiendo un width minimo a cada articulo logramos que no se muevael titulo de mi lista */
+   padding-left: 20px;
    white-space: nowrap;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain ;
 }
+.main-carrousel-container:hover .main-carrousel-card{
+   opacity: 0.2;
+} 
 .main-carrousel-card{
    position: relative;
-   
-   width: 150px;
+   min-width: 150px;
    height: 200px;
    margin: 30px 0;
+   margin-right: 20px;
    border-radius: 20px;
    overflow: hidden;
+   scroll-snap-align:center;
 }
 .main-carrousel-card:hover ~ .main-carrousel-card{
-   transform: translate3d(100px,0,0);
+   transform: translate3d(20px,0,0);
 }
-.main-carrousel-card:hover{
-   transform: scale(1.2); 
 
+.main-carrousel-container .main-carrousel-card:hover{
+   transform: scale(1.2); 
+   opacity: 1;
+   transition: 450ms;
 }
 .carrousel-card-img{
    width: 100%;
