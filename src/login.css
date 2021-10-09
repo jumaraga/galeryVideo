@@ -1,0 +1,118 @@
+html::-webkit-scrollbar{
+   background: rgba(201, 199, 199, 0.548);
+   width:8px;   
+}
+html::-webkit-scrollbar-thumb{
+   background: rgba(201, 199, 199, 0.548);
+   height: 30px;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   outline: none;
+   text-decoration: none;
+   color: white;
+   list-style: none;
+}
+header {
+   padding-left: 20PX;
+   padding-top: 20PX;
+}
+body{
+background-color: #005f99;
+height: auto;
+}
+header{
+   height: auto;
+}
+ main{
+   display: flex;
+   width: 100%;
+   height: auto;
+} 
+.main-container{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   margin: 10px auto;
+   width: 400px;
+   height: 650px;
+   padding: 20px;
+   border-radius: 10px;
+   border: white solid 3px;
+
+}
+.container-login{
+   background-color: transparent;
+   width: 90%;
+   margin-bottom: 20px;
+   border: none;
+   border-bottom: white 2px solid;
+   padding: 10px;
+   align-self: center;
+}
+.user::placeholder
+,.password::placeholder{
+   color: white;
+}
+.main-container-login{
+   display: flex;
+   
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 40px;   
+}
+.main-container-login button{
+   width: 90%;
+   height: 50px;
+   margin-top: 20px;
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 10px;
+   border: none;
+   align-self: center;
+   cursor: pointer;
+}
+ul{
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+}
+ul li{
+   display: flex;
+}
+li input{
+   margin-right: 5px;
+}
+.main-container-social{
+   margin-top: 60px;
+}
+.container-social-icon{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   margin-right: 10px;
+}
+.google{
+   background-image: url('./assets/google.png');
+}
+.twitter{
+   background-image: url('./assets/twitter.png');
+}
+.register{
+   margin-top: 30px;
+}
+.register{
+   position: absolute;
+   bottom: 100px;
+}
+footer{
+   height: 30px;
+}
+footer ul{
+   margin:0;
+   justify-content: space-around;
+}

@@ -10,7 +10,7 @@ html{
    font-size: 62.5%;
 }
 body{
-   background-color: aqua;
+   background-color: #005f99;
    font-size: 1.6rem;
 }
 header{
@@ -50,12 +50,14 @@ header{
 .main-section h3 {
    align-self: center;
    
+   
 }
 .main-section-buscador{
    align-self: center;
    width: 60%;
    height: 30px;
    padding: 10px;
+   margin-top: 20px;
    border: white solid 2px;
    border-radius: 10px;
    background-color: transparent;
@@ -65,6 +67,10 @@ header{
 }
 .main-section-buscador::placeholder{
    color: white ;
+}
+.main-carrousel h4{
+   padding-left: 21px;
+   margin-top: 20px;
 }
 .main-carrousel{
    /* padding-left: 20px; comentaremos este paddig porque nos que se  queda aun cuando usamos el scroll de las imagenes */
@@ -106,4 +112,40 @@ header{
    height: 100%;
    object-fit:cover;
 }
-
+.player{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-image: url('./assets/play.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.add{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-image: url('./assets/plus.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.card-detail{
+   position: absolute;
+   display: none;
+   width: auto;
+   bottom: 5px;
+   left: 5px;
+}
+.main-carrousel-container .main-carrousel-card:hover .card-detail{
+   display: block;
+   left: 5px;
+   bottom: 5px;
+}
+.main-carrousel-container::-webkit-scrollbar-thumb{
+   background: rgba(201, 199, 199, 0.548);
+}
+.main-carrousel-container::-webkit-scrollbar{
+   width: 5px;
+   height: 5px;
+}
